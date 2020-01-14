@@ -58,6 +58,14 @@
       let filterInput = document.getElementById('filterInput');
       // Add event listener
       filterInput.addEventListener('keyup', filterNames);
+
+      function filterNames(){
+        // Get the value of the input
+        let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+        // Get names ul
+        let names = document.getElementById('names');
+      }
     </script>
   </body>
 </html>
