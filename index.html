@@ -64,7 +64,21 @@
         let filterValue = document.getElementById('filterInput').value.toUpperCase();
 
         // Get names ul
-        let names = document.getElementById('names');
+        let ul = document.getElementById('names');
+
+        // Get li from ul
+        let li = ul.querySelectorAll('li.collection-item');
+
+        // Loop through collection-item li
+        for(let i = 0; i < li.lenght; i++){
+          let a = li[i].getElementsByTagName('a')[0];
+          // If marched
+          if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+            li[i].style.display = '';
+          } else {
+
+          }
+        }
       }
     </script>
   </body>
